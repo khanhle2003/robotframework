@@ -1,0 +1,82 @@
+{"level":30,"time":"2025-04-10T10:35:14.010Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Listening on 59653"}
+(node:5904) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-10T10:35:14.305Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-10T10:35:14.949Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-10T10:35:14.950Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-10T10:35:14.950Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-10T10:35:14.962Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-10T10:35:14.962Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-10T10:35:15.009Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Changed active context"}
+{"level":30,"time":"2025-04-10T10:35:15.556Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-10T10:35:15.557Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Changed active page"}
+{"level":30,"time":"2025-04-10T10:35:17.154Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-10T10:35:17.183Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-04-10T10:35:17.313Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-04-10T10:35:17.335Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-10T10:35:17.336Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Strict mode is enabled, find Locator with text=\"Đăng nhập\" in page."}
+{"level":30,"time":"2025-04-10T10:35:17.692Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method click"}
+{"level":30,"time":"2025-04-10T10:35:17.698Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-04-10T10:35:17.699Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Strict mode is enabled, find Locator with input[id=\"username\"] in page."}
+{"level":30,"time":"2025-04-10T10:35:17.720Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method fillText"}
+{"level":30,"time":"2025-04-10T10:35:17.728Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-04-10T10:35:17.728Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Strict mode is enabled, find Locator with input[id=\"password\"] in page."}
+{"level":30,"time":"2025-04-10T10:35:17.748Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method fillText"}
+{"level":30,"time":"2025-04-10T10:35:17.763Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-10T10:35:17.763Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Strict mode is enabled, find Locator with xpath=//button[contains(text(),'ĐĂNG NHẬP')] in page."}
+{"level":30,"time":"2025-04-10T10:35:17.855Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method click"}
+{"level":30,"time":"2025-04-10T10:35:19.866Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-10T10:35:19.867Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Strict mode is enabled, find Locator with xpath=//a[contains(text(),'Giỏ hàng')] in page."}
+{"level":30,"time":"2025-04-10T10:35:20.107Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method click"}
+{"level":30,"time":"2025-04-10T10:35:20.113Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-10T10:35:20.113Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Strict mode is enabled, find Locator with xpath=//td[text()='BK17836']/parent::tr//span[text()='Xóa'] in page."}
+{"level":30,"time":"2025-04-10T10:35:50.130Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//td[text()=\'BK17836\']/parent::tr//span[text()=\'Xóa\']')[22m
+
+    at internalClick (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11890:19)
+    at async click (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11871:18)
+    at async PlaywrightServer.click (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-04-10T10:35:50.135Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-10T10:35:50.136Z","pid":5904,"hostname":"DESKTOP-567QI8G","Take screenshot with options: ":{"path":"D:\\WorkSpace\\anfo work\\robotframework\\tests\\delete_in_cart\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":30000,"omitBackground":false}}
+{"level":30,"time":"2025-04-10T10:35:50.333Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-10T10:35:50.345Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-10T10:35:50.397Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Removed page=137f8a29-7c92-4343-9035-b56807caf826 from context=95d2caf1-4954-49cc-9888-fa1f4d893eb0 page stack"}
+{"level":30,"time":"2025-04-10T10:35:50.906Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-10T10:35:50.911Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-10T10:35:50.912Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-10T10:35:50.920Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-10T10:35:50.921Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-10T10:35:51.005Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-10T10:35:51.005Z","pid":5904,"hostname":"DESKTOP-567QI8G","msg":"End of node method closeAllBrowsers"}

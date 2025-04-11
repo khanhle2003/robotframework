@@ -17,5 +17,11 @@ PATH:
   - .
 PYTHONPATH:
   - .
+  - tests
+  - resources
+robot: 
+  output: results/output.xml  
+  log: results/log.html
+  report: results/report.html
 ignoreFiles:
   - .gitignore

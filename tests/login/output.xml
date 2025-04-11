@@ -1,214 +1,600 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-09T14:37:53.131520" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-10T17:44:16.920607" rpa="false" schemaversion="5">
 <suite id="s1" name="Login Test" source="D:\WorkSpace\anfo work\robotframework\tests\login\login_test.robot">
-<test id="s1-t1" name="Valid Login Test" line="8">
+<test id="s1-t1" name="Login Test" line="9">
 <kw name="Set Browser Timeout" owner="Browser" type="SETUP">
-<msg time="2025-04-09T14:37:53.751078" level="INFO">Starting Browser process C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js using port 60427</msg>
-<msg time="2025-04-09T14:37:53.751078" level="INFO">Node startup parameters: ['node', 'C:\\Users\\vua\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\Browser\\wrapper\\index.js', '60427']</msg>
+<msg time="2025-04-10T17:44:17.251750" level="INFO">Starting Browser process C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js using port 60475</msg>
+<msg time="2025-04-10T17:44:17.251750" level="INFO">Node startup parameters: ['node', 'C:\\Users\\vua\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\Browser\\wrapper\\index.js', '60475']</msg>
 <arg>30 seconds</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2025-04-09T14:37:53.699105" elapsed="1.312867"/>
+<status status="PASS" start="2025-04-10T17:44:17.202557" elapsed="1.353603"/>
 </kw>
 <kw name="Login To System" owner="login_page">
 <kw name="Open Login Page" owner="login_page">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-09T14:37:55.015974" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\WorkSpace\\anfo work\\robotframework\\tests\\login\\browser\\traces\\temp\\60cc4544-99fd-4018-ba79-34655f6adad3"}</msg>
-<msg time="2025-04-09T14:37:55.911981" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\WorkSpace\\anfo work\\robotframework\\tests\\login\\browser\\traces\\temp\\60cc4544-99fd-4018-ba79-34655f6adad3"}</msg>
+<msg time="2025-04-10T17:44:18.561165" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\WorkSpace\\anfo work\\robotframework\\tests\\login\\browser\\traces\\temp\\fab836a1-a445-4b7b-9d63-9678cc074b18"}</msg>
+<msg time="2025-04-10T17:44:18.935029" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\WorkSpace\\anfo work\\robotframework\\tests\\login\\browser\\traces\\temp\\fab836a1-a445-4b7b-9d63-9678cc074b18"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-09T14:37:55.014979" elapsed="0.897002"/>
+<status status="PASS" start="2025-04-10T17:44:18.559159" elapsed="0.375870"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-09T14:37:57.520751" level="INFO">Successfully initialized new page object and opened url: https://sinhvien.eaut.edu.vn/</msg>
-<msg time="2025-04-09T14:37:57.520751" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-04-10T17:44:22.076948" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/welcome</msg>
+<msg time="2025-04-10T17:44:22.076948" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-09T14:37:55.912979" elapsed="1.608803"/>
+<status status="PASS" start="2025-04-10T17:44:18.936031" elapsed="3.140917"/>
 </kw>
-<status status="PASS" start="2025-04-09T14:37:55.013975" elapsed="2.507807"/>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-04-10T17:44:22.165789" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-04-10T17:44:22.077935" elapsed="0.088854"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:44:18.559159" elapsed="3.608626"/>
 </kw>
 <kw name="Click Login Button" owner="login_page">
 <kw name="Click" owner="Browser">
-<msg time="2025-04-09T14:37:57.523771" level="INFO">Clicks the element 'text="Đăng nhập"'.</msg>
+<msg time="2025-04-10T17:44:22.172783" level="INFO">Clicks the element 'text="Đăng nhập"'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:37:57.522787" elapsed="0.276972"/>
+<status status="PASS" start="2025-04-10T17:44:22.170781" elapsed="0.278844"/>
 </kw>
-<status status="PASS" start="2025-04-09T14:37:57.521782" elapsed="0.277977"/>
+<status status="PASS" start="2025-04-10T17:44:22.168786" elapsed="0.280839"/>
 </kw>
 <kw name="Input Username" owner="login_page">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-09T14:37:57.801754" level="INFO">Fills the text '20213410' in the given field.</msg>
+<msg time="2025-04-10T17:44:22.452615" level="INFO">Fills the text 'admin' in the given field.</msg>
 <arg>${USERNAME_FIELD}</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:37:57.801754" elapsed="0.078008"/>
+<status status="PASS" start="2025-04-10T17:44:22.451645" elapsed="0.034968"/>
 </kw>
 <arg>${username}</arg>
-<status status="PASS" start="2025-04-09T14:37:57.800778" elapsed="0.079975"/>
+<status status="PASS" start="2025-04-10T17:44:22.449625" elapsed="0.037989"/>
 </kw>
 <kw name="Input Password" owner="login_page">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-09T14:37:57.881787" level="INFO">Fills the text 'cY25Cq' in the given field.</msg>
+<msg time="2025-04-10T17:44:22.491615" level="INFO">Fills the text 'admin11' in the given field.</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:37:57.880753" elapsed="0.020002"/>
+<status status="PASS" start="2025-04-10T17:44:22.488616" elapsed="0.021997"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2025-04-09T14:37:57.880753" elapsed="0.020002"/>
+<status status="PASS" start="2025-04-10T17:44:22.487614" elapsed="0.022999"/>
 </kw>
 <kw name="Submit Login" owner="login_page">
 <kw name="Click" owner="Browser">
-<msg time="2025-04-09T14:37:57.902752" level="INFO">Clicks the element 'text="Đăng nhập"'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
+<msg time="2025-04-10T17:44:22.512612" level="INFO">Clicks the element 'xpath=//button[contains(text(),'ĐĂNG NHẬP')]'.</msg>
+<arg>xpath=//button[contains(text(),'ĐĂNG NHẬP')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:37:57.901755" elapsed="0.249648"/>
+<status status="PASS" start="2025-04-10T17:44:22.511612" elapsed="0.043008"/>
 </kw>
-<status status="PASS" start="2025-04-09T14:37:57.900755" elapsed="0.250648"/>
+<status status="PASS" start="2025-04-10T17:44:22.510613" elapsed="0.044007"/>
 </kw>
-<status status="PASS" start="2025-04-09T14:37:55.012978" elapsed="3.139420"/>
+<status status="PASS" start="2025-04-10T17:44:18.557161" elapsed="3.998454"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-09T14:38:00.153849" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-04-10T17:44:24.557098" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-09T14:37:58.153398" elapsed="2.000451"/>
+<status status="PASS" start="2025-04-10T17:44:22.555615" elapsed="2.001483"/>
+</kw>
+<kw name="Add Flighter To System" owner="teams_page">
+<kw name="Sidebar Search" owner="teams_page">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:24.561149" level="INFO">Clicks the element 'xpath=//a[@id='them-chuyen-bay']'.</msg>
+<arg>xpath=//a[@id='them-chuyen-bay']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:24.560107" elapsed="0.180898"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:44:24.559145" elapsed="0.181860"/>
+</kw>
+<kw name="Add New Fighter" owner="teams_page">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:24.743005" level="INFO">Clicks the element 'xpath=//button[@class='ant-btn ant-btn-primary']'.</msg>
+<arg>xpath=//button[@class='ant-btn ant-btn-primary']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:24.743005" elapsed="0.160405"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:44:24.742007" elapsed="0.161403"/>
+</kw>
+<kw name="Fill Fighter Information" owner="teams_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:44:24.906418" level="INFO">Fills the text '112233' in the given field.</msg>
+<arg>xpath=//input[@name='flightCode']</arg>
+<arg>112233</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:24.904412" elapsed="0.017005"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:24.922417" level="INFO">Clicks the element 'xpath=//select[@name='departureAirport']'.</msg>
+<arg>xpath=//select[@name='departureAirport']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:24.921417" elapsed="0.387212"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-10T17:44:25.329642" level="INFO">Found locator('//select[@name=\'departureAirport\']/option').first(),locator('//select[@name=\'departureAirport\']/option').nth(1),locator('//select[@name=\'departureAirport\']/option').nth(2) Locators successfully.</msg>
+<msg time="2025-04-10T17:44:25.329642" level="INFO">${elements} = ["xpath=//select[@name='departureAirport']/option &gt;&gt; nth=0", "xpath=//select[@name='departureAirport']/option &gt;&gt; nth=1", "xpath=//select[@name='departureAirport']/option &gt;&gt; nth=2"]</msg>
+<var>${elements}</var>
+<arg>xpath=//select[@name='departureAirport']/option</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.309610" elapsed="0.020032"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-10T17:44:25.330641" level="INFO">${departureAirport} = Sân bay Nội bài</msg>
+<var>${departureAirport}</var>
+<arg>Sân bay Nội bài</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.330641" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-10T17:44:25.331640" level="INFO">${found} = False</msg>
+<var>${found}</var>
+<arg>${FALSE}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.330641" elapsed="0.000999"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.373647" level="INFO">Text: 'Sân bay Nội bài'</msg>
+<msg time="2025-04-10T17:44:25.373647" level="INFO">${text} = Sân bay Nội bài</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.331640" elapsed="0.042007"/>
+</kw>
+<if>
+<branch type="IF" condition="'${text}' == '${departureAirport}'">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-10T17:44:25.375606" level="INFO">${found} = True</msg>
+<var>${found}</var>
+<arg>${TRUE}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.375606" elapsed="0.000000"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-10T17:44:25.376624" level="INFO">Selects the option(s) Sân bay Nội bài by attribute SelectAttribute.label from element xpath=//select[@name='departureAirport'].</msg>
+<arg>xpath=//select[@name='departureAirport']</arg>
+<arg>text</arg>
+<arg>${departureAirport}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.375606" elapsed="0.031039"/>
+</kw>
+<break>
+<status status="PASS" start="2025-04-10T17:44:25.406645" elapsed="0.000000"/>
+</break>
+<status status="PASS" start="2025-04-10T17:44:25.374609" elapsed="0.032036"/>
+</branch>
+<status status="PASS" start="2025-04-10T17:44:25.374609" elapsed="0.032036"/>
+</if>
+<var name="${element}">xpath=//select[@name='departureAirport']/option &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-04-10T17:44:25.331640" elapsed="0.075005"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2025-04-10T17:44:25.331640" elapsed="0.075005"/>
+</for>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:25.407641" level="INFO">Clicks the element 'xpath=//select[@name='arrivalAirport']'.</msg>
+<arg>xpath=//select[@name='arrivalAirport']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.407641" elapsed="0.065997"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-10T17:44:25.484565" level="INFO">Found locator('//select[@name=\'arrivalAirport\']/option').first(),locator('//select[@name=\'arrivalAirport\']/option').nth(1),locator('//select[@name=\'arrivalAirport\']/option').nth(2) Locators successfully.</msg>
+<msg time="2025-04-10T17:44:25.485540" level="INFO">${elements} = ["xpath=//select[@name='arrivalAirport']/option &gt;&gt; nth=0", "xpath=//select[@name='arrivalAirport']/option &gt;&gt; nth=1", "xpath=//select[@name='arrivalAirport']/option &gt;&gt; nth=2"]</msg>
+<var>${elements}</var>
+<arg>xpath=//select[@name='arrivalAirport']/option</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.474638" elapsed="0.010902"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.503549" level="INFO">Text: 'Sân bay Nội bài'</msg>
+<msg time="2025-04-10T17:44:25.504549" level="INFO">${text} = Sân bay Nội bài</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.485540" elapsed="0.019009"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:25.520200" level="INFO">Attribute is: '1'</msg>
+<msg time="2025-04-10T17:44:25.520200" level="INFO">${value} = 1</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.504549" elapsed="0.015651"/>
+</kw>
+<var name="${element}">xpath=//select[@name='arrivalAirport']/option &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-04-10T17:44:25.485540" elapsed="0.034660"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.540202" level="INFO">Text: 'Sân bay Thọ Xuân'</msg>
+<msg time="2025-04-10T17:44:25.540202" level="INFO">${text} = Sân bay Thọ Xuân</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.521200" elapsed="0.019002"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:25.553201" level="INFO">Attribute is: '2'</msg>
+<msg time="2025-04-10T17:44:25.553201" level="INFO">${value} = 2</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.540202" elapsed="0.012999"/>
+</kw>
+<var name="${element}">xpath=//select[@name='arrivalAirport']/option &gt;&gt; nth=1</var>
+<status status="PASS" start="2025-04-10T17:44:25.520200" elapsed="0.033001"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.572201" level="INFO">Text: 'Sân bay Phú Bài'</msg>
+<msg time="2025-04-10T17:44:25.572201" level="INFO">${text} = Sân bay Phú Bài</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.554197" elapsed="0.018004"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:25.586224" level="INFO">Attribute is: '3'</msg>
+<msg time="2025-04-10T17:44:25.586224" level="INFO">${value} = 3</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.572201" elapsed="0.014023"/>
+</kw>
+<var name="${element}">xpath=//select[@name='arrivalAirport']/option &gt;&gt; nth=2</var>
+<status status="PASS" start="2025-04-10T17:44:25.554197" elapsed="0.033019"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2025-04-10T17:44:25.485540" elapsed="0.101676"/>
+</for>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-10T17:44:25.588205" level="INFO">Selects the option(s) 2 by attribute SelectAttribute.value from element xpath=//select[@name='arrivalAirport'].</msg>
+<arg>xpath=//select[@name='arrivalAirport']</arg>
+<arg>value</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.587216" elapsed="0.026984"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.615239" level="INFO">Fills the text '2025-12-25T14:30' in the given field.</msg>
+<arg>xpath=//input[@name='departureTime']</arg>
+<arg>2025-12-25T14:30</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.614200" elapsed="0.016762"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.631970" level="INFO">Fills the text '2025-12-25T22:30' in the given field.</msg>
+<arg>xpath=//input[@name='arrivalTime']</arg>
+<arg>2025-12-25T22:30</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.630962" elapsed="0.015997"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.647958" level="INFO">Fills the text '1300000' in the given field.</msg>
+<arg>xpath=//input[@name='basePrice']</arg>
+<arg>1300000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.646959" elapsed="0.016001"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.663962" level="INFO">Fills the text '1' in the given field.</msg>
+<arg>xpath=//input[@name='status']</arg>
+<arg>1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.663962" elapsed="0.018993"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:25.683955" level="INFO">Clicks the element 'xpath=//select[@name='aircraft']'.</msg>
+<arg>xpath=//select[@name='aircraft']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.682955" elapsed="0.081294"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-10T17:44:25.778282" level="INFO">Found locator('//select[@name=\'aircraft\']/option').first() Locators successfully.</msg>
+<msg time="2025-04-10T17:44:25.778282" level="INFO">${elements} = ["xpath=//select[@name='aircraft']/option &gt;&gt; nth=0"]</msg>
+<var>${elements}</var>
+<arg>xpath=//select[@name='aircraft']/option</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.765256" elapsed="0.013026"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.798248" level="INFO">Text: '666-BOEINGVIetjet'</msg>
+<msg time="2025-04-10T17:44:25.798248" level="INFO">${text} = 666-BOEINGVIetjet</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.779251" elapsed="0.018997"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:25.813273" level="INFO">Attribute is: '1'</msg>
+<msg time="2025-04-10T17:44:25.814251" level="INFO">${value} = 1</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.799251" elapsed="0.015000"/>
+</kw>
+<var name="${element}">xpath=//select[@name='aircraft']/option &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-04-10T17:44:25.779251" elapsed="0.035000"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2025-04-10T17:44:25.779251" elapsed="0.035000"/>
+</for>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-10T17:44:25.815250" level="INFO">Selects the option(s) 1 by attribute SelectAttribute.value from element xpath=//select[@name='aircraft'].</msg>
+<arg>xpath=//select[@name='aircraft']</arg>
+<arg>value</arg>
+<arg>1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.814251" elapsed="0.021923"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:25.837173" level="INFO">Clicks the element 'xpath=//select[@name='airline']'.</msg>
+<arg>xpath=//select[@name='airline']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.836174" elapsed="0.056002"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-10T17:44:25.903185" level="INFO">Found locator('//select[@name=\'airline\']/option').first(),locator('//select[@name=\'airline\']/option').nth(1),locator('//select[@name=\'airline\']/option').nth(2) Locators successfully.</msg>
+<msg time="2025-04-10T17:44:25.904161" level="INFO">${elements} = ["xpath=//select[@name='airline']/option &gt;&gt; nth=0", "xpath=//select[@name='airline']/option &gt;&gt; nth=1", "xpath=//select[@name='airline']/option &gt;&gt; nth=2"]</msg>
+<var>${elements}</var>
+<arg>xpath=//select[@name='airline']/option</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.892176" elapsed="0.011985"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.924875" level="INFO">Text: 'Bamboo Airways'</msg>
+<msg time="2025-04-10T17:44:25.924875" level="INFO">${text} = Bamboo Airways</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.905165" elapsed="0.019710"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:25.937879" level="INFO">Attribute is: '1'</msg>
+<msg time="2025-04-10T17:44:25.938909" level="INFO">${value} = 1</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.924875" elapsed="0.014034"/>
+</kw>
+<var name="${element}">xpath=//select[@name='airline']/option &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-04-10T17:44:25.905165" elapsed="0.033744"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.958877" level="INFO">Text: 'VietJet'</msg>
+<msg time="2025-04-10T17:44:25.958877" level="INFO">${text} = VietJet</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.938909" elapsed="0.019968"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:25.972877" level="INFO">Attribute is: '2'</msg>
+<msg time="2025-04-10T17:44:25.972877" level="INFO">${value} = 2</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.958877" elapsed="0.014000"/>
+</kw>
+<var name="${element}">xpath=//select[@name='airline']/option &gt;&gt; nth=1</var>
+<status status="PASS" start="2025-04-10T17:44:25.938909" elapsed="0.033968"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-10T17:44:25.992874" level="INFO">Text: 'Vietnam Airlines'</msg>
+<msg time="2025-04-10T17:44:25.992874" level="INFO">${text} = Vietnam Airlines</msg>
+<var>${text}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.972877" elapsed="0.021000"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-10T17:44:26.009892" level="INFO">Attribute is: '3'</msg>
+<msg time="2025-04-10T17:44:26.009892" level="INFO">${value} = 3</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:25.993877" elapsed="0.016015"/>
+</kw>
+<var name="${element}">xpath=//select[@name='airline']/option &gt;&gt; nth=2</var>
+<status status="PASS" start="2025-04-10T17:44:25.972877" elapsed="0.037015"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2025-04-10T17:44:25.904161" elapsed="0.105731"/>
+</for>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-10T17:44:26.010909" level="INFO">Selects the option(s) 1 by attribute SelectAttribute.value from element xpath=//select[@name='airline'].</msg>
+<arg>xpath=//select[@name='airline']</arg>
+<arg>value</arg>
+<arg>1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:26.010909" elapsed="0.023628"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:26.035562" level="INFO">Clicks the element 'xpath=//span[normalize-space()='Thêm']'.</msg>
+<arg>xpath=//span[normalize-space()='Thêm']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:26.035562" elapsed="0.061064"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:26.098306" level="INFO">Clicks the element 'xpath=//span[@class='ant-modal-close-x']'.</msg>
+<arg>xpath=//span[@class='ant-modal-close-x']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:26.097236" elapsed="0.078621"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:44:24.903410" elapsed="1.272982"/>
+</kw>
+<kw name="Back to welcome" owner="teams_page">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:44:26.177607" level="INFO">Clicks the element 'xpath=//a[contains(text(),'Trang chủ')]'.</msg>
+<arg>xpath=//a[contains(text(),'Trang chủ')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:44:26.177566" elapsed="0.472798"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:44:26.176392" elapsed="0.473972"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:44:24.558106" elapsed="2.093254"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-10T17:44:46.653258" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-10T17:44:26.651360" elapsed="20.001898"/>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-09T14:38:00.671993" level="INFO">Closed all browsers</msg>
+<msg time="2025-04-10T17:44:47.194072" level="INFO">Closed all browsers</msg>
 <arg>ALL</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-09T14:38:00.154863" elapsed="0.517130"/>
+<status status="PASS" start="2025-04-10T17:44:46.653258" elapsed="0.540814"/>
 </kw>
-<status status="PASS" start="2025-04-09T14:37:53.698107" elapsed="6.974852"/>
+<status status="PASS" start="2025-04-10T17:44:17.201560" elapsed="29.993514"/>
 </test>
-<test id="s1-t2" name="Invalid Login Test" line="11">
-<kw name="Set Browser Timeout" owner="Browser" type="SETUP">
-<arg>30 seconds</arg>
-<tag>Config</tag>
-<tag>Setter</tag>
-<doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2025-04-09T14:38:00.682959" elapsed="0.001035"/>
-</kw>
-<kw name="Login To System" owner="login_page">
-<kw name="Open Login Page" owner="login_page">
-<kw name="New Browser" owner="Browser">
-<msg time="2025-04-09T14:38:00.685995" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\WorkSpace\\anfo work\\robotframework\\tests\\login\\browser\\traces\\temp\\82537ed2-c96e-4143-ba0b-7d8c8180f517"}</msg>
-<msg time="2025-04-09T14:38:01.011976" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\WorkSpace\\anfo work\\robotframework\\tests\\login\\browser\\traces\\temp\\82537ed2-c96e-4143-ba0b-7d8c8180f517"}</msg>
-<arg>browser=${BROWSER}</arg>
-<arg>headless=${HEADLESS}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-09T14:38:00.684988" elapsed="0.327972"/>
-</kw>
-<kw name="New Page" owner="Browser">
-<msg time="2025-04-09T14:38:02.770388" level="INFO">Successfully initialized new page object and opened url: https://sinhvien.eaut.edu.vn/</msg>
-<msg time="2025-04-09T14:38:02.770388" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-09T14:38:01.012960" elapsed="1.758428"/>
-</kw>
-<status status="PASS" start="2025-04-09T14:38:00.684988" elapsed="2.086400"/>
-</kw>
-<kw name="Click Login Button" owner="login_page">
-<kw name="Click" owner="Browser">
-<msg time="2025-04-09T14:38:02.773389" level="INFO">Clicks the element 'text="Đăng nhập"'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:38:02.772388" elapsed="0.261023"/>
-</kw>
-<status status="PASS" start="2025-04-09T14:38:02.771388" elapsed="0.263012"/>
-</kw>
-<kw name="Input Username" owner="login_page">
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-09T14:38:03.035392" level="INFO">Fills the text 'invalid' in the given field.</msg>
-<arg>${USERNAME_FIELD}</arg>
-<arg>${username}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:38:03.035392" elapsed="0.082000"/>
-</kw>
-<arg>${username}</arg>
-<status status="PASS" start="2025-04-09T14:38:03.034400" elapsed="0.082992"/>
-</kw>
-<kw name="Input Password" owner="login_page">
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-09T14:38:03.118390" level="INFO">Fills the text 'invalid' in the given field.</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:38:03.118390" elapsed="0.016001"/>
-</kw>
-<arg>${password}</arg>
-<status status="PASS" start="2025-04-09T14:38:03.117392" elapsed="0.018000"/>
-</kw>
-<kw name="Submit Login" owner="login_page">
-<kw name="Click" owner="Browser">
-<msg time="2025-04-09T14:38:03.136389" level="INFO">Clicks the element 'text="Đăng nhập"'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-09T14:38:03.136389" elapsed="0.209386"/>
-</kw>
-<status status="PASS" start="2025-04-09T14:38:03.135392" elapsed="0.210383"/>
-</kw>
-<arg>username=invalid</arg>
-<arg>password=invalid</arg>
-<status status="PASS" start="2025-04-09T14:38:00.683994" elapsed="2.661781"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-09T14:38:05.347060" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-09T14:38:03.346776" elapsed="2.000284"/>
-</kw>
-<kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-09T14:38:06.048169" level="INFO">Closed all browsers</msg>
-<arg>ALL</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-09T14:38:05.349063" elapsed="0.699106"/>
-</kw>
-<status status="PASS" start="2025-04-09T14:38:00.677964" elapsed="5.370205"/>
-</test>
-<status status="PASS" start="2025-04-09T14:37:53.133522" elapsed="12.920646"/>
+<status status="PASS" start="2025-04-10T17:44:16.922600" elapsed="30.279490"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login Test" id="s1" pass="2" fail="0" skip="0">Login Test</stat>
+<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
 </suite>
 </statistics>
 <errors>

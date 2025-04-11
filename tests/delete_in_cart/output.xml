@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-10T17:35:12.738953" rpa="false" schemaversion="5">
+<suite id="s1" name="Delete In Cart Test" source="D:\WorkSpace\anfo work\robotframework\tests\delete_in_cart\delete_in_cart_test.robot">
+<test id="s1-t1" name="Login Test" line="9">
+<kw name="Set Browser Timeout" owner="Browser" type="SETUP">
+<msg time="2025-04-10T17:35:13.085210" level="INFO">Starting Browser process C:\Users\vua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js using port 59653</msg>
+<msg time="2025-04-10T17:35:13.085210" level="INFO">Node startup parameters: ['node', 'C:\\Users\\vua\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\Browser\\wrapper\\index.js', '59653']</msg>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2025-04-10T17:35:13.039280" elapsed="1.249162"/>
+</kw>
+<kw name="Login To System" owner="login_page">
+<kw name="Open Login Page" owner="login_page">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-10T17:35:14.299973" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\WorkSpace\\anfo work\\robotframework\\tests\\delete_in_cart\\browser\\traces\\temp\\0dd9e150-61c8-4093-a5aa-b92ff44a2f35"}</msg>
+<msg time="2025-04-10T17:35:14.952149" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\WorkSpace\\anfo work\\robotframework\\tests\\delete_in_cart\\browser\\traces\\temp\\0dd9e150-61c8-4093-a5aa-b92ff44a2f35"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-10T17:35:14.295984" elapsed="0.657167"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-10T17:35:17.163182" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/welcome</msg>
+<msg time="2025-04-10T17:35:17.164181" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-10T17:35:14.953151" elapsed="2.211030"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-04-10T17:35:17.320456" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-04-10T17:35:17.165189" elapsed="0.156257"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:35:14.293443" elapsed="3.028003"/>
+</kw>
+<kw name="Click Login Button" owner="login_page">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:35:17.329473" level="INFO">Clicks the element 'text="Đăng nhập"'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:35:17.326452" elapsed="0.367151"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:35:17.323464" elapsed="0.370139"/>
+</kw>
+<kw name="Input Username" owner="login_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:35:17.695600" level="INFO">Fills the text 'admin' in the given field.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:35:17.694604" elapsed="0.027695"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-04-10T17:35:17.694604" elapsed="0.027695"/>
+</kw>
+<kw name="Input Password" owner="login_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-10T17:35:17.726298" level="INFO">Fills the text 'admin11' in the given field.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:35:17.724298" elapsed="0.029016"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-04-10T17:35:17.723304" elapsed="0.030992"/>
+</kw>
+<kw name="Submit Login" owner="login_page">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:35:17.756300" level="INFO">Clicks the element 'xpath=//button[contains(text(),'ĐĂNG NHẬP')]'.</msg>
+<arg>xpath=//button[contains(text(),'ĐĂNG NHẬP')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:35:17.755299" elapsed="0.101999"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:35:17.754296" elapsed="0.103002"/>
+</kw>
+<status status="PASS" start="2025-04-10T17:35:14.289441" elapsed="3.567857"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-10T17:35:19.861153" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-10T17:35:17.859304" elapsed="2.001849"/>
+</kw>
+<kw name="Delete in cart" owner="delete_in_cart">
+<kw name="Sidebar Search" owner="delete_in_cart">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:35:19.863018" level="INFO">Clicks the element 'xpath=//a[contains(text(),'Giỏ hàng')]'.</msg>
+<arg>xpath=//a[contains(text(),'Giỏ hàng')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-10T17:35:19.861986" elapsed="0.247964"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-10T17:35:20.110933" level="INFO">Clicks the element 'xpath=//td[text()='BK17836']/parent::tr//span[text()='Xóa']'.</msg>
+<msg time="2025-04-10T17:35:50.334773" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-10T17:35:50.335781" level="INFO">See also file:///D:/WorkSpace/anfo%20work/robotframework/tests/delete_in_cart/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-10T17:35:50.335781" level="FAIL">TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('//td[text()=\'BK17836\']/parent::tr//span[text()=\'Xóa\']')
+</msg>
+<arg>xpath=//td[text()='BK17836']/parent::tr//span[text()='Xóa']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-04-10T17:35:20.109950" elapsed="30.230855">TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('//td[text()=\'BK17836\']/parent::tr//span[text()=\'Xóa\']')
+</status>
+</kw>
+<status status="FAIL" start="2025-04-10T17:35:19.861986" elapsed="30.478819">TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('//td[text()=\'BK17836\']/parent::tr//span[text()=\'Xóa\']')
+</status>
+</kw>
+<status status="FAIL" start="2025-04-10T17:35:19.861153" elapsed="30.479652">TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('//td[text()=\'BK17836\']/parent::tr//span[text()=\'Xóa\']')
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-10T17:35:50.341773" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-10T17:35:50.907437" level="INFO">Closed all browsers</msg>
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-10T17:35:50.341773" elapsed="0.565664"/>
+</kw>
+<status status="FAIL" start="2025-04-10T17:35:13.037237" elapsed="37.870200">TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('//td[text()=\'BK17836\']/parent::tr//span[text()=\'Xóa\']')
+</status>
+</test>
+<status status="FAIL" start="2025-04-10T17:35:12.742952" elapsed="38.172485"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Delete In Cart Test" id="s1" pass="0" fail="1" skip="0">Delete In Cart Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
